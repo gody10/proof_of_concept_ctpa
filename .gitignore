@@ -1,3 +1,4 @@
 data/
 Dockerfile  
-job.yaml
+job.yml
+pvc.yml

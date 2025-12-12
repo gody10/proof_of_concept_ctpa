@@ -6,9 +6,9 @@ from tqdm import tqdm
 
 # --- CONFIGURATION ---
 # Point this to the outer 'Coltea-Lung-CT-100W' folder
-RAW_DATA_ROOT = Path("Coltea-Lung-CT-100W/Coltea-Lung-CT-100W/Coltea-Lung-CT-100W") 
+RAW_DATA_ROOT = Path("data/Coltea-Lung-CT-100W/Coltea-Lung-CT-100W/") 
 # Where we will save the clean NIfTIs
-OUTPUT_ROOT = Path("Coltea_Processed_NIfTI") 
+OUTPUT_ROOT = Path("data/Coltea_Processed_Nifti") 
 
 # Ensure output directory exists
 OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
@@ -31,8 +31,8 @@ def convert_dataset():
         # We want to convert ARTERIAL (Input) and NATIVE (Target)
         phases = {
             "ARTERIAL": "arterial.nii.gz",
-            "NATIVE": "native.nii.gz"
-            # We can skip VENOUS for this specific specific project to save space/time
+            "NATIVE": "native.nii.gz",
+            "VENOUS": "venous.nii.gz"
         }
         
         for phase_folder, output_filename in phases.items():

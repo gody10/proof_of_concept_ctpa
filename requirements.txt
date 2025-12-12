@@ -1,0 +1,3 @@
+dicom2nifti
+pandas
+tqdm
