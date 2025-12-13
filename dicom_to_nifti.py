@@ -20,7 +20,7 @@ def convert_dataset():
     
     print(f"Found {len(patient_dirs)} patient folders. Starting conversion...")
 
-    for patient_dir in tqdm(patient_dirs):
+    for patient_dir in tqdm(patient_dirs, desc="Converting DICOM to NIfTI"):
         patient_id = patient_dir.name
         
         # Create a destination folder for this patient

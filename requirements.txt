@@ -1,3 +1,6 @@
 dicom2nifti
 pandas
 tqdm
+monai
+nibabel
+matplotlib

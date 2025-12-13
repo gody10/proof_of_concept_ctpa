@@ -1,0 +1,8 @@
+2025-12-13 17:35:02,601 - Loaded weights from best_model.pth
+2025-12-13 17:35:02,603 - Starting evaluation on 14 samples using cuda...
+2025-12-13 17:35:12,711 -  -> Saved 3D NIfTI files (input, target, prediction) for inspection
+2025-12-13 17:36:59,569 - 
+--- Final Results ---
+2025-12-13 17:36:59,578 - PSNR: 19.8820
+2025-12-13 17:36:59,578 - SSIM: 0.5835
+2025-12-13 17:36:59,579 - MAE: 0.0584
